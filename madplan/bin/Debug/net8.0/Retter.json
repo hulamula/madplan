@@ -1,0 +1,37 @@
+[
+  {
+    "Navn": "Pasta med pesto",
+    "Ingredienser": [
+      "pasta",
+      "pesto"
+    ],
+    "Nummer": 1
+  },
+  {
+    "Navn": "blødkogt æg",
+    "Ingredienser": [
+      "æg",
+      "salt"
+    ],
+    "Nummer": 2
+  },
+  {
+    "Navn": "brød med ost",
+    "Ingredienser": [
+      "brød",
+      "ost"
+    ],
+    "Nummer": 3
+  },
+  {
+    "Navn": "Palak paneer",
+    "Ingredienser": [
+      "spinat",
+      "paneer",
+      "tomat",
+      "krydderier",
+      "ris"
+    ],
+    "Nummer": 4
+  }
+]

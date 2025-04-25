@@ -1,0 +1,325 @@
+[
+  {
+    "Navn": "Grøntsagswok",
+    "Ingredienser": [
+      "Grøntsager",
+      "Soja",
+      "Hvidløg",
+      "Ingefær",
+      "Tofu",
+      "Sesamolie"
+    ],
+    "Nummer": 1
+  },
+  {
+    "Navn": "Kikærtekarry",
+    "Ingredienser": [
+      "Kikærter",
+      "Tomater",
+      "Kokosmælk",
+      "Karrypulver",
+      "Løg"
+    ],
+    "Nummer": 2
+  },
+  {
+    "Navn": "Pasta Primavera",
+    "Ingredienser": [
+      "Pasta",
+      "Peberfrugter",
+      "Cherrytomater",
+      "Squash",
+      "Olivenolie"
+    ],
+    "Nummer": 3
+  },
+  {
+    "Navn": "Vegetarisk chili",
+    "Ingredienser": [
+      "Bønner",
+      "Tomater",
+      "Peberfrugt",
+      "Majs",
+      "Chilipulver"
+    ],
+    "Nummer": 4
+  },
+  {
+    "Navn": "Linsegryde",
+    "Ingredienser": [
+      "Linser",
+      "Gulerødder",
+      "Selleri",
+      "Løg",
+      "Grøntsagsbouillon"
+    ],
+    "Nummer": 5
+  },
+  {
+    "Navn": "Svamperisotto",
+    "Ingredienser": [
+      "Arborioris",
+      "Svampe",
+      "Grøntsagsbouillon",
+      "Hvidløg",
+      "Løg"
+    ],
+    "Nummer": 6
+  },
+  {
+    "Navn": "Fyldte peberfrugter",
+    "Ingredienser": [
+      "Peberfrugter",
+      "Ris",
+      "Bønner",
+      "Tomater",
+      "Ost"
+    ],
+    "Nummer": 7
+  },
+  {
+    "Navn": "Aubergine Parmigiana",
+    "Ingredienser": [
+      "Aubergine",
+      "Tomatsauce",
+      "Mozzarella",
+      "Parmesan",
+      "Rasp"
+    ],
+    "Nummer": 8
+  },
+  {
+    "Navn": "Grøntsagslasagne",
+    "Ingredienser": [
+      "Lasagneplader",
+      "Spinat",
+      "Ricotta",
+      "Tomatsauce",
+      "Mozzarella"
+    ],
+    "Nummer": 9
+  },
+  {
+    "Navn": "Falafelwrap",
+    "Ingredienser": [
+      "Falafel",
+      "Pita",
+      "Hummus",
+      "Agurk",
+      "Tomat",
+      "Salat"
+    ],
+    "Nummer": 10
+  },
+  {
+    "Navn": "Sorte bønnetacos",
+    "Ingredienser": [
+      "Sorte bønner",
+      "Majs",
+      "Avocado",
+      "Salsa",
+      "Tortillaskaller"
+    ],
+    "Nummer": 11
+  },
+  {
+    "Navn": "Caprese-salat",
+    "Ingredienser": [
+      "Tomater",
+      "Mozzarella",
+      "Basilikum",
+      "Balsamico"
+    ],
+    "Nummer": 12
+  },
+  {
+    "Navn": "Vegetarisk paella",
+    "Ingredienser": [
+      "Ris",
+      "Safran",
+      "Ærter",
+      "Peberfrugt",
+      "Artiskokhjerter"
+    ],
+    "Nummer": 13
+  },
+  {
+    "Navn": "Spinatquiche",
+    "Ingredienser": [
+      "Spinat",
+      "Æg",
+      "Ost",
+      "Tærtedej",
+      "Løg"
+    ],
+    "Nummer": 14
+  },
+  {
+    "Navn": "Sød kartoffelkarry",
+    "Ingredienser": [
+      "Sød kartoffel",
+      "Kikærter",
+      "Kokosmælk",
+      "Karrypulver"
+    ],
+    "Nummer": 15
+  },
+  {
+    "Navn": "Vegetarpizza",
+    "Ingredienser": [
+      "Pizzadej",
+      "Tomatsauce",
+      "Mozzarella",
+      "Peberfrugt",
+      "Oliven"
+    ],
+    "Nummer": 16
+  },
+  {
+    "Navn": "Blomkålstacos",
+    "Ingredienser": [
+      "Blomkål",
+      "Salsa",
+      "Avocado",
+      "Tortilla"
+    ],
+    "Nummer": 17
+  },
+  {
+    "Navn": "Squashfrikadeller",
+    "Ingredienser": [
+      "Squash",
+      "Mel",
+      "Æg",
+      "Ost",
+      "Krydderurter"
+    ],
+    "Nummer": 18
+  },
+  {
+    "Navn": "Grøntsagssushi",
+    "Ingredienser": [
+      "Sushiris",
+      "Agurk",
+      "Avocado",
+      "Noriark"
+    ],
+    "Nummer": 19
+  },
+  {
+    "Navn": "Chana Masala",
+    "Ingredienser": [
+      "Kikærter",
+      "Tomater",
+      "Løg",
+      "Hvidløg",
+      "Indiske krydderier"
+    ],
+    "Nummer": 20
+  },
+  {
+    "Navn": "Tomat-basilikumsuppe",
+    "Ingredienser": [
+      "Tomater",
+      "Basilikum",
+      "Løg",
+      "Hvidløg",
+      "Bouillon"
+    ],
+    "Nummer": 21
+  },
+  {
+    "Navn": "Vegetarisk moussaka",
+    "Ingredienser": [
+      "Aubergine",
+      "Kartofler",
+      "Tomatsauce",
+      "Bechamelsauce"
+    ],
+    "Nummer": 22
+  },
+  {
+    "Navn": "Grøntsagscurry",
+    "Ingredienser": [
+      "Kartofler",
+      "Blomkål",
+      "Ærter",
+      "Kokosmælk",
+      "Karry"
+    ],
+    "Nummer": 23
+  },
+  {
+    "Navn": "Ratatouille",
+    "Ingredienser": [
+      "Aubergine",
+      "Squash",
+      "Peberfrugt",
+      "Tomater",
+      "Krydderurter"
+    ],
+    "Nummer": 24
+  },
+  {
+    "Navn": "Kikærtebøffer",
+    "Ingredienser": [
+      "Kikærter",
+      "Løg",
+      "Hvidløg",
+      "Krydderurter",
+      "Mel"
+    ],
+    "Nummer": 25
+  },
+  {
+    "Navn": "Grønkålssalat",
+    "Ingredienser": [
+      "Grønkål",
+      "Æbler",
+      "Nødder",
+      "Dressing"
+    ],
+    "Nummer": 26
+  },
+  {
+    "Navn": "Rødbedebøffer",
+    "Ingredienser": [
+      "Rødbeder",
+      "Løg",
+      "Havregryn",
+      "Æg"
+    ],
+    "Nummer": 27
+  },
+  {
+    "Navn": "Kartoffel-porretærte",
+    "Ingredienser": [
+      "Kartoffel",
+      "Porre",
+      "Æg",
+      "Ost",
+      "Tærtedej"
+    ],
+    "Nummer": 28
+  },
+  {
+    "Navn": "Pasta med pesto",
+    "Ingredienser": [
+      "Pasta",
+      "Basilikumpesto",
+      "Cherrytomater",
+      "Pinjekerner"
+    ],
+    "Nummer": 29
+  },
+  {
+    "Navn": "Rødbedesuppe",
+    "Ingredienser": [
+      "Rødbeder",
+      "Kartofler",
+      "Løg",
+      "Bouillon"
+    ],
+    "Nummer": 30
+  }
+]

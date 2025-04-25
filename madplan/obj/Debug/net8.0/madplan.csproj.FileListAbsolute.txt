@@ -1,0 +1,14 @@
+C:\Users\niels\Google Drive\Dokumenter\2025\dtu grundlæggende objektorienteret programmering c# oop\madplan\madplan\madplan\bin\Debug\net8.0\madplan.exe
+C:\Users\niels\Google Drive\Dokumenter\2025\dtu grundlæggende objektorienteret programmering c# oop\madplan\madplan\madplan\bin\Debug\net8.0\madplan.deps.json
+C:\Users\niels\Google Drive\Dokumenter\2025\dtu grundlæggende objektorienteret programmering c# oop\madplan\madplan\madplan\bin\Debug\net8.0\madplan.runtimeconfig.json
+C:\Users\niels\Google Drive\Dokumenter\2025\dtu grundlæggende objektorienteret programmering c# oop\madplan\madplan\madplan\bin\Debug\net8.0\madplan.dll
+C:\Users\niels\Google Drive\Dokumenter\2025\dtu grundlæggende objektorienteret programmering c# oop\madplan\madplan\madplan\bin\Debug\net8.0\madplan.pdb
+C:\Users\niels\Google Drive\Dokumenter\2025\dtu grundlæggende objektorienteret programmering c# oop\madplan\madplan\madplan\obj\Debug\net8.0\madplan.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\niels\Google Drive\Dokumenter\2025\dtu grundlæggende objektorienteret programmering c# oop\madplan\madplan\madplan\obj\Debug\net8.0\madplan.AssemblyInfoInputs.cache
+C:\Users\niels\Google Drive\Dokumenter\2025\dtu grundlæggende objektorienteret programmering c# oop\madplan\madplan\madplan\obj\Debug\net8.0\madplan.AssemblyInfo.cs
+C:\Users\niels\Google Drive\Dokumenter\2025\dtu grundlæggende objektorienteret programmering c# oop\madplan\madplan\madplan\obj\Debug\net8.0\madplan.csproj.CoreCompileInputs.cache
+C:\Users\niels\Google Drive\Dokumenter\2025\dtu grundlæggende objektorienteret programmering c# oop\madplan\madplan\madplan\obj\Debug\net8.0\madplan.dll
+C:\Users\niels\Google Drive\Dokumenter\2025\dtu grundlæggende objektorienteret programmering c# oop\madplan\madplan\madplan\obj\Debug\net8.0\refint\madplan.dll
+C:\Users\niels\Google Drive\Dokumenter\2025\dtu grundlæggende objektorienteret programmering c# oop\madplan\madplan\madplan\obj\Debug\net8.0\madplan.pdb
+C:\Users\niels\Google Drive\Dokumenter\2025\dtu grundlæggende objektorienteret programmering c# oop\madplan\madplan\madplan\obj\Debug\net8.0\madplan.genruntimeconfig.cache
+C:\Users\niels\Google Drive\Dokumenter\2025\dtu grundlæggende objektorienteret programmering c# oop\madplan\madplan\madplan\obj\Debug\net8.0\ref\madplan.dll
