@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace madplan.Services
 {
+    /// <summary>
+    /// Beder bruger om at vælge default- eller brugerdefinerede retter, indlæser fil
+    /// </summary>
     public static class FilVælger
     {
         //metode til at vælge json fil ved start af app

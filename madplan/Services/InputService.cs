@@ -9,7 +9,9 @@ namespace madplan.Services
 {
     public class InputService
     {
-        //metode til indhentning af ingrediensliste via indtastning
+        /// <summary>
+        /// metode til indhentning af ingrediensliste via indtastning
+        /// </summary>
         static List<string> IndtastIngredienser()
         {
             List<string> ingredienser = new List<string>();
@@ -26,7 +28,9 @@ namespace madplan.Services
             return ingredienser;
         }
 
-        //metode til indtastning af ret
+        /// <summary>
+        /// metode til indtastning af ret
+        /// </summary>
         static Ret IndtastRet()
         {
             RetFiler.OpdaterRetAntal();
@@ -37,7 +41,10 @@ namespace madplan.Services
             return new Ret(navn, ingredienser);
         }
 
-        //metode til at tilføje retter til json via loop
+        /// <summary>
+        /// metode til at tilføje retter til json via loop
+        /// </summary>
+        
         public static void TilføjRet()
         {
             Console.WriteLine("Vil du tilføje en ret? (ja/nej)");

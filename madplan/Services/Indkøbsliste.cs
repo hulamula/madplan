@@ -8,6 +8,9 @@ using madplan.Models;
 
 namespace madplan.Services
 {
+    /// <summary>
+    /// tilføj ingredienser fra ret til vareliste og exporter til .txt
+    /// </summary>
     class Indkøbsliste
     {
         //declare en liste Varer med property

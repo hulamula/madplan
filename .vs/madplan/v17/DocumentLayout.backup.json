@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{8582404F-E4D9-44E2-8823-9AAF7057CD5C}|madplan\\madplan.csproj|solutionrelative:madplan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8582404F-E4D9-44E2-8823-9AAF7057CD5C}|madplan\\madplan.csproj|c:\\users\\niels\\google drive\\dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplan\\services\\plangen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8582404F-E4D9-44E2-8823-9AAF7057CD5C}|madplan\\madplan.csproj|solutionrelative:madplan\\services\\plangen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8582404F-E4D9-44E2-8823-9AAF7057CD5C}|madplan\\madplan.csproj|c:\\users\\niels\\google drive\\dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplan\\services\\inputservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8582404F-E4D9-44E2-8823-9AAF7057CD5C}|madplan\\madplan.csproj|solutionrelative:madplan\\services\\inputservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8582404F-E4D9-44E2-8823-9AAF7057CD5C}|madplan\\madplan.csproj|c:\\users\\niels\\google drive\\dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplan\\services\\filv\u00E6lger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8582404F-E4D9-44E2-8823-9AAF7057CD5C}|madplan\\madplan.csproj|solutionrelative:madplan\\services\\filv\u00E6lger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8582404F-E4D9-44E2-8823-9AAF7057CD5C}|madplan\\madplan.csproj|c:\\users\\niels\\google drive\\dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplan\\utilities\\danskeugedage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8582404F-E4D9-44E2-8823-9AAF7057CD5C}|madplan\\madplan.csproj|solutionrelative:madplan\\utilities\\danskeugedage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "RetFiler.cs",
               "DocumentMoniker": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplan\\Services\\RetFiler.cs",
               "RelativeDocumentMoniker": "madplan\\Services\\RetFiler.cs",
@@ -49,6 +61,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PlanGen.cs",
+              "DocumentMoniker": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplan\\Services\\PlanGen.cs",
+              "RelativeDocumentMoniker": "madplan\\Services\\PlanGen.cs",
+              "ToolTip": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplan\\Services\\PlanGen.cs",
+              "RelativeToolTip": "madplan\\Services\\PlanGen.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwCcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T17:18:35.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InputService.cs",
+              "DocumentMoniker": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplan\\Services\\InputService.cs",
+              "RelativeDocumentMoniker": "madplan\\Services\\InputService.cs",
+              "ToolTip": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplan\\Services\\InputService.cs",
+              "RelativeToolTip": "madplan\\Services\\InputService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowCgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T17:15:54.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FilV\u00E6lger.cs",
+              "DocumentMoniker": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplan\\Services\\FilV\u00E6lger.cs",
+              "RelativeDocumentMoniker": "madplan\\Services\\FilV\u00E6lger.cs",
+              "ToolTip": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplan\\Services\\FilV\u00E6lger.cs",
+              "RelativeToolTip": "madplan\\Services\\FilV\u00E6lger.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T17:09:35.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "DanskeUgedage.cs",
               "DocumentMoniker": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplan\\Utilities\\DanskeUgedage.cs",
               "RelativeDocumentMoniker": "madplan\\Utilities\\DanskeUgedage.cs",
@@ -61,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Indk\u00F8bsliste.cs",
               "DocumentMoniker": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplan\\Services\\Indk\u00F8bsliste.cs",
               "RelativeDocumentMoniker": "madplan\\Services\\Indk\u00F8bsliste.cs",
@@ -74,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Ret.cs",
               "DocumentMoniker": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplan\\Models\\Ret.cs",
               "RelativeDocumentMoniker": "madplan\\Models\\Ret.cs",
@@ -93,7 +144,7 @@
               "RelativeDocumentMoniker": "madplan\\Program.cs",
               "ToolTip": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplan\\Program.cs",
               "RelativeToolTip": "madplan\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAEwCcAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-25T19:46:45.82Z",
               "EditorCaption": ""

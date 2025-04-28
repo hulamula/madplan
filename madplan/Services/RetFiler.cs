@@ -9,7 +9,9 @@ using madplan.Models;
 
 namespace madplan.Services
 {
-    //Klasse til at gemme og indlæse og modificere filer
+    /// <summary>
+    /// Klasse til at gemme og indlæse og modificere filer
+    /// </summary>
     public class RetFiler
     {
         //indstil JsonSerializerOptions

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace madplan.Utilities
 {
+    /// <summary>
+    /// hjælpeklasse der oversætter ugedage til dansk og starter ugen mandag
+    /// </summary>
     public static class DanskeUgedage
     {
 

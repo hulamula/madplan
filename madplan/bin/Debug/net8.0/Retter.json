@@ -33,5 +33,14 @@
       "ris"
     ],
     "Nummer": 4
+  },
+  {
+    "Navn": "Pizza",
+    "Ingredienser": [
+      "Pizzadej",
+      "tomat",
+      "ost"
+    ],
+    "Nummer": 5
   }
 ]

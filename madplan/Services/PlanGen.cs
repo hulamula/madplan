@@ -10,7 +10,9 @@ namespace madplan.Services
 {
     public class PlanGen
     {
-        //metode til at generere ugeplan
+        /// <summary>
+        /// metode til at generere ugeplan
+        /// </summary>
         public static Dictionary<DayOfWeek, Ret> LavPlan(List<Ret> retter)
         {
             //sikkerhedstjek for tom liste
