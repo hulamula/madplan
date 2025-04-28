@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundlæggende objektorienteret programmering c# oop\\madplan\\madplan\\madplan\\madplan.csproj",
+      "projectUniqueName": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundlæggende objektorienteret programmering c# oop\\madplan\\madplan\\madplan.csproj",
       "projectName": "madplan",
-      "projectPath": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundlæggende objektorienteret programmering c# oop\\madplan\\madplan\\madplan\\madplan.csproj",
+      "projectPath": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundlæggende objektorienteret programmering c# oop\\madplan\\madplan\\madplan.csproj",
       "packagesPath": "C:\\Users\\niels\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundlæggende objektorienteret programmering c# oop\\madplan\\madplan\\madplan\\obj\\",
+      "outputPath": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundlæggende objektorienteret programmering c# oop\\madplan\\madplan\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

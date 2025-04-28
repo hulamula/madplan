@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("madplan")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a20c1a04dd06244677676ca4fb2a1df01e249bf6")]
 [assembly: System.Reflection.AssemblyProductAttribute("madplan")]
 [assembly: System.Reflection.AssemblyTitleAttribute("madplan")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
