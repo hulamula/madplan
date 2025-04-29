@@ -42,5 +42,16 @@
       "ost"
     ],
     "Nummer": 5
+  },
+  {
+    "Navn": "Brasede kartofler",
+    "Ingredienser": [
+      "kartofler",
+      "smør",
+      "salt",
+      "peber",
+      "løg"
+    ],
+    "Nummer": 6
   }
 ]

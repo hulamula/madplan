@@ -5,4 +5,8 @@ Simple C# console app for planning weekly meals.
 - Plan weekly menus
 - Generate shopping lists
 
-Currently preparing for WPF integration.
+## UI Mockup
+![Mockup](docs/mockup 1.png)
+
+## Roadmap
+See [Implementation Plan](docs/food_planner_implementation_plan.txt)

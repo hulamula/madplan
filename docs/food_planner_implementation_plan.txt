@@ -1,0 +1,96 @@
+
+### Revised Implementation Plan for the Food Planner App
+
+#### 1. Core Logic Development (Console Version)
+Focus on building robust core functionalities using a console-based approach.
+
+**1.1 Basic Features (MVP)**
+- [x] Input and Save Dishes: 
+  - Allow users to add new dishes with names and ingredients.
+  - Save dishes to a JSON file.
+- [x] Test Data for Initial Development:
+  - Create a sample JSON file with 10-20 dishes for testing.
+- [x] Load Dishes from JSON:
+  - Retrieve saved dishes from the file.
+- [ ] Generate Weekly Meal Plan:
+  - [x] Create method to assign dishes to each day of the week.
+  - [x] Implement method in main and test if working.
+  - [x] Add safety check to handle empty dish list.
+  - [x] Change weekdays to be displayed in Danish.
+  - [x] Change week start from Sunday to Monday.
+- [x] Generate Shopping List:
+  - Aggregate ingredients from the planned dishes.
+- [x] Save and Load Plans:
+  - Save the generated meal plan and shopping list.
+
+---
+
+#### 2. WPF Integration (User Interface Enhancement)
+Transition to a graphical interface while ensuring core functionality.
+
+**2.0 Preparation:**
+- [x] **Commit to GitHub:**
+  - Set up version control with commits and GitHub repository.
+- [x] **Compartmentalize Code:**
+  - Organize models, services, and UI logic into clean namespaces/folders.
+
+
+**2.1 Initial WPF Setup:**
+- [x] Project Setup:
+  - Create a new WPF project linked to the core logic library.
+- [ ] **Basic UI Structure**  
+  - [ ] **Step 1:** Load and display saved dishes in a ListView  
+  - [ ] **Step 2:** Add dishes via form (name + ingredients)
+- [ ] **Generate and Display Meal Plan**  
+  - [ ] **Step 3:** Generate weekly plan using button  
+  - [ ] **Step 4:** Display plan with weekday names
+- [ ] **Display Shopping List**  
+  - [ ] **Step 5:** Aggregate + show shopping list visually  
+  - [ ] **Step 6:** Add save functionality for plan and list
+
+
+**2.2 Core Logic Migration:**
+- [ ] Linking Backend to UI:
+  - Connect existing methods to WPF controls (e.g., buttons, list views).
+- [ ] Data Binding and MVVM Setup:
+  - Structure the project using the MVVM pattern.
+
+---
+
+#### 3. Enhanced Features (Primarily in WPF)
+Implement these once the basic WPF version is working smoothly.
+
+**3.1 Customizable Meal Plans:**
+- [ ] Save User Preferences:
+  - Store how many days per week the user typically cooks.
+- [ ] Plan Editing:
+  - Allow users to mark days as 'leftovers,' 'eating out,' or 'takeaway.'
+  - Clear specific days from the generated plan.
+- [ ] Fixed Dish Options: 
+  - Allow users to specify a few fixed dishes for the week, while the rest are randomized.
+- [ ] Weekday Name Display:
+  - Use simple weekday names instead of a complex calendar UI.
+
+
+**3.2 Customizable Shopping Lists:**
+- [ ] Item Editing:
+  - Remove or modify items from the list.
+- [ ] Always-Stocked Ingredients:
+  - Let users define basic items that don’t need to be added to the list.
+- [ ] Supermarket Organization:
+  - Group ingredients by category (e.g., fruits, dairy).
+  - Use a reference list of ~500 common ingredients sorted by store section.
+
+**3.3 Enhanced Meal Planning:**
+- [ ] Starred Dishes:
+  - Let users mark favorite dishes for increased planning frequency.
+- [ ] Preference Saving:
+  - Save commonly cooked dishes and cooking frequency.
+
+---
+
+#### 4. Ongoing Maintenance and Improvements
+- [ ] Performance Optimization:
+  - Improve loading times when managing large dish collections.
+- [ ] Data Validation:
+  - Prevent duplicate or empty dish entries.
