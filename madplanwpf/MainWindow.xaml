@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:madplanwpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Madplan" Height="800" Width="500">
     <Grid>
-
+        <ComboBox x:Name="FilvalgComboBox"
+                  Margin="10"
+                  VerticalAlignment="Top"
+                  Width="200"
+                  SelectionChanged="FilvalgComboBox_SelectionChanged">
+            <ComboBoxItem Content="Standardretter" Tag="DefaultRetter.json"/>
+            <ComboBoxItem Content="Mine retter" Tag="Retter.json"/>
+        </ComboBox>
     </Grid>
 </Window>

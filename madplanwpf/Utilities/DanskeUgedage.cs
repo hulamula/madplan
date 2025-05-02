@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace madplan.Utilities
+namespace madplanwpf.Utilities
 {
     /// <summary>
     /// hjælpeklasse der oversætter ugedage til dansk og starter ugen mandag

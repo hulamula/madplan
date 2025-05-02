@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using madplan.Models;
+using madplanwpf.Models;
+using System.IO;        // For File, StreamWriter, StreamReader, Path
+using System.Text.Json; // For JSON handling, if needed
 
-namespace madplan.Services
+
+namespace madplanwpf.Services
 {
     public class InputService
     {

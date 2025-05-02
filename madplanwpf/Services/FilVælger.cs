@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;        // For File, StreamWriter, StreamReader, Path
+using System.Text.Json; // For JSON handling, if needed
 
-namespace madplan.Services
+namespace madplanwpf.Services
 {
     /// <summary>
     /// Beder bruger om at vælge default- eller brugerdefinerede retter, indlæser fil
