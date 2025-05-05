@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FC92B747-4E0C-4895-A6F1-51F32E7CFD03}|madplanwpf\\madplanwpf.csproj|c:\\users\\niels\\google drive\\dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\services\\retfiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC92B747-4E0C-4895-A6F1-51F32E7CFD03}|madplanwpf\\madplanwpf.csproj|solutionrelative:madplanwpf\\services\\retfiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC92B747-4E0C-4895-A6F1-51F32E7CFD03}|madplanwpf\\madplanwpf.csproj|c:\\users\\niels\\google drive\\dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\tilf\u00F8jret.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FC92B747-4E0C-4895-A6F1-51F32E7CFD03}|madplanwpf\\madplanwpf.csproj|solutionrelative:madplanwpf\\tilf\u00F8jret.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC92B747-4E0C-4895-A6F1-51F32E7CFD03}|madplanwpf\\madplanwpf.csproj|c:\\users\\niels\\google drive\\dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\services\\plangen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC92B747-4E0C-4895-A6F1-51F32E7CFD03}|madplanwpf\\madplanwpf.csproj|solutionrelative:madplanwpf\\services\\plangen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC92B747-4E0C-4895-A6F1-51F32E7CFD03}|madplanwpf\\madplanwpf.csproj|c:\\users\\niels\\google drive\\dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\retterwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC92B747-4E0C-4895-A6F1-51F32E7CFD03}|madplanwpf\\madplanwpf.csproj|solutionrelative:madplanwpf\\retterwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC92B747-4E0C-4895-A6F1-51F32E7CFD03}|madplanwpf\\madplanwpf.csproj|c:\\users\\niels\\google drive\\dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\services\\inputservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC92B747-4E0C-4895-A6F1-51F32E7CFD03}|madplanwpf\\madplanwpf.csproj|solutionrelative:madplanwpf\\services\\inputservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC92B747-4E0C-4895-A6F1-51F32E7CFD03}|madplanwpf\\madplanwpf.csproj|c:\\users\\niels\\google drive\\dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\services\\indk\u00F8bsliste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC92B747-4E0C-4895-A6F1-51F32E7CFD03}|madplanwpf\\madplanwpf.csproj|solutionrelative:madplanwpf\\services\\indk\u00F8bsliste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC92B747-4E0C-4895-A6F1-51F32E7CFD03}|madplanwpf\\madplanwpf.csproj|c:\\users\\niels\\google drive\\dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\retterwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FC92B747-4E0C-4895-A6F1-51F32E7CFD03}|madplanwpf\\madplanwpf.csproj|solutionrelative:madplanwpf\\retterwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC92B747-4E0C-4895-A6F1-51F32E7CFD03}|madplanwpf\\madplanwpf.csproj|c:\\users\\niels\\google drive\\dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,63 +30,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlanGen.cs",
-              "DocumentMoniker": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\Services\\PlanGen.cs",
-              "RelativeDocumentMoniker": "madplanwpf\\Services\\PlanGen.cs",
-              "ToolTip": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\Services\\PlanGen.cs",
-              "RelativeToolTip": "madplanwpf\\Services\\PlanGen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T19:45:30.594Z",
+              "DocumentIndex": 0,
+              "Title": "Tilf\u00F8jRet.xaml",
+              "DocumentMoniker": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\Tilf\u00F8jRet.xaml",
+              "RelativeDocumentMoniker": "madplanwpf\\Tilf\u00F8jRet.xaml",
+              "ToolTip": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\Tilf\u00F8jRet.xaml",
+              "RelativeToolTip": "madplanwpf\\Tilf\u00F8jRet.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-05T19:58:33.631Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RetFiler.cs",
-              "DocumentMoniker": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\Services\\RetFiler.cs",
-              "RelativeDocumentMoniker": "madplanwpf\\Services\\RetFiler.cs",
-              "ToolTip": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\Services\\RetFiler.cs",
-              "RelativeToolTip": "madplanwpf\\Services\\RetFiler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "RetterWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\RetterWindow.xaml.cs",
+              "RelativeDocumentMoniker": "madplanwpf\\RetterWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\RetterWindow.xaml.cs",
+              "RelativeToolTip": "madplanwpf\\RetterWindow.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T19:45:17.874Z",
+              "WhenOpened": "2025-05-05T19:19:06.576Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "InputService.cs",
-              "DocumentMoniker": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\Services\\InputService.cs",
-              "RelativeDocumentMoniker": "madplanwpf\\Services\\InputService.cs",
-              "ToolTip": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\Services\\InputService.cs",
-              "RelativeToolTip": "madplanwpf\\Services\\InputService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T19:43:38.107Z",
+              "Title": "RetterWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\RetterWindow.xaml",
+              "RelativeDocumentMoniker": "madplanwpf\\RetterWindow.xaml",
+              "ToolTip": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\RetterWindow.xaml",
+              "RelativeToolTip": "madplanwpf\\RetterWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-05T18:59:02.69Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Indk\u00F8bsliste.cs",
-              "DocumentMoniker": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\Services\\Indk\u00F8bsliste.cs",
-              "RelativeDocumentMoniker": "madplanwpf\\Services\\Indk\u00F8bsliste.cs",
-              "ToolTip": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\Services\\Indk\u00F8bsliste.cs",
-              "RelativeToolTip": "madplanwpf\\Services\\Indk\u00F8bsliste.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T19:43:30.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\MainWindow.xaml",
               "RelativeDocumentMoniker": "madplanwpf\\MainWindow.xaml",
@@ -102,13 +83,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "madplanwpf\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\MainWindow.xaml.cs",
               "RelativeToolTip": "madplanwpf\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAA9wBcAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T19:27:00.994Z",
               "EditorCaption": ""

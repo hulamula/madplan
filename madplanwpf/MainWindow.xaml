@@ -15,5 +15,15 @@
             <ComboBoxItem Content="Standardretter" Tag="DefaultRetter.json"/>
             <ComboBoxItem Content="Mine retter" Tag="Retter.json"/>
         </ComboBox>
+        <Button Content="Rediger retter"
+                Name="RedigerRetterKnap"
+                Margin="13"
+                Width="100"
+                Height="20"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Right"
+                Click="RedigerRetterKnap_Click"
+                />
+
     </Grid>
 </Window>

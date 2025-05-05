@@ -1,0 +1,28 @@
+﻿<Window x:Class="madplanwpf.RetterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:madplanwpf"
+        mc:Ignorable="d"
+        Title="RetterWindow" Height="800" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Button Content="Tilføj ret"
+                Grid.Row="0"
+                Click="TilføjRet_Click"
+        />
+        <ListView x:Name="RetterListView"
+                  Grid.Row="1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Navn" DisplayMemberBinding="{Binding Navn}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

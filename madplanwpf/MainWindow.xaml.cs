@@ -15,11 +15,15 @@ using madplanwpf.Models;
 
 namespace madplanwpf
 {
+    
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        //declare liste ValgteRetter - udfyldes via combobox, overføres til nyt vindue
+        private List<Ret> ValgteRetter;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -49,9 +53,9 @@ namespace madplanwpf
                     {
                         //læs indhold af fil og gem til string
                         string jsonIndhold = File.ReadAllText(filSti);
-                        //json-deserialize string til List<T> af typen Ret kaldet "retter"
-                        List<Ret> retter = JsonSerializer.Deserialize<List<Ret>>(jsonIndhold);
-                        MessageBox.Show($"Indlæst {retter.Count} retter");
+                        //json-deserialize string til List<T> af typen Ret kaldet "ValgteRetter"
+                        ValgteRetter = JsonSerializer.Deserialize<List<Ret>>(jsonIndhold);
+                        MessageBox.Show($"Indlæst {ValgteRetter.Count} retter");
                     }
                         //hvis ikke muligt at læse indhold eller ikke muligt at deserialize giv fejlmeddelelse
                         catch (Exception ex)
@@ -62,10 +66,16 @@ namespace madplanwpf
                 //hvis ingen fil på sti giv fejlmeddelelse
                 else
                 {
-                    MessageBox.Show("Fil ikke fundet");
+                        MessageBox.Show("Fil ikke fundet");
                 }
 
             }
+        }
+        private void RedigerRetterKnap_Click(object sender, RoutedEventArgs e)
+        {
+            //åbn RetterWindow
+            RetterWindow vindue = new RetterWindow(ValgteRetter);
+            vindue.Show();
         }
     }
 }
