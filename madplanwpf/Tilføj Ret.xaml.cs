@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using madplanwpf.ViewModels;
 
 namespace madplanwpf
 {
@@ -23,5 +24,18 @@ namespace madplanwpf
         {
             InitializeComponent();
         }
+    
+
+
+    private void TilføjIngrediensBox_TrykTast(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                ((TilføjRetViewModel)DataContext).TilføjIngrediensCommand.Execute(null);
+            }
+        }
     }
+
 }
+
+

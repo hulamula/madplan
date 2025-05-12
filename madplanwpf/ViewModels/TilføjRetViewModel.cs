@@ -37,8 +37,14 @@ namespace madplanwpf.ViewModels
     }
 
 
-    public class TilføjRetViewModel
+    public class TilføjRetViewModel : INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this , new PropertyChangedEventArgs(propertyName));
+        }
         public ICommand TilføjRetCommand { get; }
 
         public ICommand TilføjIngrediensCommand { get; }
@@ -52,6 +58,7 @@ namespace madplanwpf.ViewModels
             TilføjIngrediensCommand = new RelayCommand(TilføjIngrediens);
 
             TilføjIngredienser = new ObservableCollection<String>();
+            TilføjIngrediensCommand = new RelayCommand(TilføjIngrediens);
 
         }
 
@@ -64,7 +71,16 @@ namespace madplanwpf.ViewModels
            TilføjRetVindue.ShowDialog();
         }
 
-        public string IngrediensInput { get; set; }
+        private string _ingrediensInput;
+        public string IngrediensInput 
+        { 
+            get => _ingrediensInput; 
+            set
+            {
+                _ingrediensInput = value;
+                OnPropertyChanged();
+            }
+        }
 
         private void TilføjIngrediens()
         {

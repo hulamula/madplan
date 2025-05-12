@@ -32,7 +32,9 @@
         <TextBox
             x:Name="TilføjIngrediensBox"
             Width="100"
-            Margin="10"/>
+            Margin="10"
+            KeyDown="TilføjIngrediensBox_TrykTast"
+            Text="{Binding IngrediensInput, UpdateSourceTrigger=PropertyChanged}"/>
 
 
         <!-- knapper til at tilføje ingrediens og gemme retten, kalder kommandoer i ViewModel -->
