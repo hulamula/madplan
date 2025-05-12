@@ -14,7 +14,7 @@
         
         <Button Content="Tilføj ret"
                 Grid.Row="0"
-                Click="TilføjRet_Click"
+                Command="{Binding TilføjRetCommand}"
         />
         <ListView x:Name="RetterListView"
                   Grid.Row="1">

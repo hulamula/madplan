@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace madplanwpf
 {
     /// <summary>
-    /// Interaction logic for TilføjRet.xaml
+    /// Interaction logic for Tilføj_Ret.xaml
     /// </summary>
-    public partial class TilføjRet : Window
+    public partial class Tilføj_Ret : Window
     {
-        public TilføjRet()
+        public Tilføj_Ret()
         {
             InitializeComponent();
         }

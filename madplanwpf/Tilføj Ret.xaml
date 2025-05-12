@@ -1,0 +1,44 @@
+﻿<Window x:Class="madplanwpf.Tilføj_Ret"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:madplanwpf"
+        xmlns:vm="clr-namespace:madplanwpf.ViewModels"
+        mc:Ignorable="d">
+
+    <Window.DataContext>
+        <vm:TilføjRetViewModel/>
+    </Window.DataContext>
+    
+    
+    <StackPanel Margin="20">
+
+        <!--input felt til navn på ret, UpdateSourceTrigger gør at felt opdateres ved hver keystroke-->
+        <TextBlock Text="Navn på ret:"/>
+        <TextBox Text="{Binding NyRetNavn, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <!--input felt til ingredienser, DataTemplate gør muligt at udvide senere med fx rediger, fjern o.lign-->
+        <TextBlock Text="Ingredienser:"/>
+        <ListBox ItemsSource="{Binding TilføjIngredienser}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <!-- hver ingrediens vises som TextBox, binding til selve strengværdien -->
+                    <TextBox Text="{Binding ., UpdateSourceTrigger=PropertyChanged}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <TextBox
+            x:Name="TilføjIngrediensBox"
+            Width="100"
+            Margin="10"/>
+
+
+        <!-- knapper til at tilføje ingrediens og gemme retten, kalder kommandoer i ViewModel -->
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <Button Content="Tilføj ingrediens" Command="{Binding TilføjIngrediensCommand}"/>
+            <Button Content="Gem" Command="{Binding GemRetCommand}"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

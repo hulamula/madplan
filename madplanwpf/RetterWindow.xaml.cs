@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using madplanwpf.Models;
+using madplanwpf.ViewModels;
 
 namespace madplanwpf
 {
@@ -20,10 +21,12 @@ namespace madplanwpf
     /// </summary>
     public partial class RetterWindow : Window
     {
+
         public RetterWindow(List<Ret> retter)
         {
             InitializeComponent();
             RetterListView.ItemsSource = retter;
+            DataContext = new TilføjRetViewModel();
         }
         private void TilføjRet_Click(object sender, RoutedEventArgs e)
         {
