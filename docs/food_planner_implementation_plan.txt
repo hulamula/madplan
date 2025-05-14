@@ -12,7 +12,7 @@ Focus on building robust core functionalities using a console-based approach.
   - Create a sample JSON file with 10-20 dishes for testing.
 - [x] Load Dishes from JSON:
   - Retrieve saved dishes from the file.
-- [ ] Generate Weekly Meal Plan:
+- [x] Generate Weekly Meal Plan:
   - [x] Create method to assign dishes to each day of the week.
   - [x] Implement method in main and test if working.
   - [x] Add safety check to handle empty dish list.
@@ -36,25 +36,27 @@ Transition to a graphical interface while ensuring core functionality.
 
 
 **2.1 Initial WPF Setup:**
-- [x] Project Setup:
-  - Create a new WPF project linked to the core logic library.
-- [ ] **Basic UI Structure**  
-  - [ ] **Step 1:** Load and display saved dishes in a ListView  
-  - [ ] **Step 2:** Add dishes via form (name + ingredients)
+- [x] Project Setup:  
+  - Create a new WPF project linked to the core logic library.  
+- [x] **Basic UI Structure**  
+  - [x] **Step 1:** Load and display saved dishes in a ListView  
+  - [x] **Step 2:** Add dishes via form (name + ingredients)  
 - [ ] **Generate and Display Meal Plan**  
   - [ ] **Step 3:** Generate weekly plan using button  
-  - [ ] **Step 4:** Display plan with weekday names
+  - [ ] **Step 4:** Display plan with weekday names  
 - [ ] **Display Shopping List**  
   - [ ] **Step 5:** Aggregate + show shopping list visually  
-  - [ ] **Step 6:** Add save functionality for plan and list
+  - [ ] **Step 6:** Add save functionality for plan and list  
 
 
 **2.2 Core Logic Migration:**
-- [ ] Linking Backend to UI:
-  - Connect existing methods to WPF controls (e.g., buttons, list views).
-- [ ] Data Binding and MVVM Setup:
-  - Structure the project using the MVVM pattern.
-
+- [x] Linking Backend to UI:  
+  - Connect existing methods to WPF controls (e.g., buttons, list views).  
+- [ ] Data Binding and MVVM Setup:  
+  - Replace button logic with commands where useful.  
+  - Ensure ViewModel holds and updates observable collections.  
+  - Avoid code-behind logic where possible.  
+  
 ---
 
 #### 3. Enhanced Features (Primarily in WPF)

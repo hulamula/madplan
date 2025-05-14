@@ -64,8 +64,8 @@ namespace madplanwpf.ViewModels
 
         private void TilføjRet()
         {
-                //opret Tilføj Ret-vindue
-                var TilføjRetVindue = new madplanwpf.Tilføj_Ret();
+            //opret Tilføj Ret-vindue
+            var TilføjRetVindue = new madplanwpf.Tilføj_Ret();
 
             //åbn vindue som dialog
            TilføjRetVindue.ShowDialog();

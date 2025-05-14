@@ -28,9 +28,8 @@ namespace madplanwpf
             RetterListView.ItemsSource = retter;
             DataContext = new TilføjRetViewModel();
         }
-        private void TilføjRet_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Kommer!");
-        }
+
     }
+       
+
 }

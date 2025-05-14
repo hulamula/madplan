@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using madplanwpf.Models;
 using madplanwpf.ViewModels;
 
 namespace madplanwpf
@@ -20,11 +21,12 @@ namespace madplanwpf
     /// </summary>
     public partial class Tilføj_Ret : Window
     {
-        public Tilføj_Ret()
+        public Tilføj_Ret(Action<Ret> onTilføjRetGem)
         {
             InitializeComponent();
         }
     
+
 
 
     private void TilføjIngrediensBox_TrykTast(object sender, KeyEventArgs e)
