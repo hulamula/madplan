@@ -54,16 +54,6 @@ namespace madplanwpf.Services
 
         }
 
-        //public metode til at finde antal retter via json-fil og opdatere det i Ret-klasse
-        public static void OpdaterRetAntal()
-        {
-            List<Ret> retter = HentRetter();
-            if (retter.Count > 0)
-            {
-                int højesteNummer = retter[^1].Nummer;
-                Ret.SætAntal(højesteNummer);
-            }
-        }
 
         //public metode til at gemme en ret, kan måske gøres privat senere
         public static void GemRet(Ret ret)
@@ -79,7 +69,6 @@ namespace madplanwpf.Services
             //skriv liste med eksisterende + ny ret til
             string jsonString = JsonSerializer.Serialize(retter, indstillinger);
             File.WriteAllText(ValgtRetFilNavn, jsonString);
-            Console.WriteLine($"Ret nummer {ret.Nummer} {ret.Navn} gemt til {Path.GetFullPath(ValgtRetFilNavn)}");
         }
 
         //public metode til at gemme en UgePlan som json
@@ -93,7 +82,6 @@ namespace madplanwpf.Services
 
             File.WriteAllText(filnavn, jsonString);
 
-            Console.WriteLine($"Madplan gemt som {filnavn}");
         }
     }
 }

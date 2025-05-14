@@ -21,8 +21,6 @@ namespace madplanwpf.Services
             //sikkerhedstjek for tom liste
             if (retter.Count == 0)
             {
-                Console.WriteLine("Der er ingen indtastede retter, programmet lukker");
-                Console.ReadLine();
                 return new Dictionary<DayOfWeek, Ret>();
             }
 

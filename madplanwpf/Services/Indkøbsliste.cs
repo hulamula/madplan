@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using madplanwpf.Models;
+﻿using System.Globalization;
 using System.IO;        // For File, StreamWriter, StreamReader, Path
-using System.Text.Json; // For JSON handling, if needed
+using madplanwpf.Models;
 
 
 namespace madplanwpf.Services
@@ -35,15 +29,7 @@ namespace madplanwpf.Services
             Varer = Varer.Distinct().ToList();
         }
 
-        //udskriv indkøbsliste
-        public void Udskriv()
-        {
-            Console.WriteLine("Indkøbsliste: ");
-            foreach (string vare in Varer)
-            {
-                Console.WriteLine($"- {vare}");
-            }
-        }
+ 
         //gem indkøbsliste til .txt
         public void GemIndkøbsliste()
         {
@@ -60,7 +46,6 @@ namespace madplanwpf.Services
                 }
 
             }
-            Console.WriteLine($"Indkøbsliste gemt som {filNavn}");
         }
     }
 }

@@ -1,18 +1,13 @@
-﻿<Window x:Class="madplanwpf.Tilføj_Ret"
+﻿<Window x:Class="madplanwpf.TilføjRetWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:madplanwpf"
-        xmlns:vm="clr-namespace:madplanwpf.ViewModels"
         mc:Ignorable="d"
         Title="Tilføj ret"
         Height="500"
         Width="300">
-
-    <Window.DataContext>
-        <vm:TilføjRetViewModel/>
-    </Window.DataContext>
 
     <Grid Margin="20">
         <Grid.RowDefinitions>
@@ -26,19 +21,19 @@
 
         <!--input felt til navn på ret, UpdateSourceTrigger gør at felt opdateres ved hver keystroke-->
         <TextBlock Text="Navn på ret:" Grid.Row="0" Margin="10,0,0,5"/>
-        <TextBox Text="{Binding NyRetNavn, UpdateSourceTrigger=PropertyChanged}"
+        <TextBox 
+                x:Name="RetNavnBox"
                  Width="100" HorizontalAlignment="Left" Grid.Row="1" Margin="10,0,0,10"/>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Row="2" Margin="0,0,0,10">
             <TextBox
                 x:Name="TilføjIngrediensBox"
-                Text="{Binding IngrediensInput, UpdateSourceTrigger=PropertyChanged}"
                 Width="100"
                 Margin="10"
                 KeyDown="TilføjIngrediensBox_TrykTast"/>
             <Button
                 Content="Tilføj ingrediens"
-                Command="{Binding TilføjIngrediensCommand}"
+                Click="TilføjIngrediens_Click"
                 Height="20"
                 Width="100"/>
 
@@ -46,19 +41,24 @@
         
         <!--input felt til ingredienser, DataTemplate gør muligt at udvide senere med fx rediger, fjern o.lign-->
         <TextBlock Text="Ingredienser:" Grid.Row="3"/>
-        <ListBox ItemsSource="{Binding TilføjIngredienser}" Grid.Row="4" Margin="0,5,0,5">
+        <ListBox 
+            x:Name="RetIngrediensBox"
+            ItemsSource="{Binding TilføjIngredienser}"
+            Grid.Row="4"
+            Margin="0,5,0,5">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <!-- hver ingrediens vises som TextBox, binding til selve strengværdien -->
-                    <TextBox Text="{Binding ., UpdateSourceTrigger=PropertyChanged}"/>
+                    <TextBlock Text="{Binding .}"/>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
 
         <!-- knap til at gemme retten, kalder kommando i ViewModel -->
-        <Button Content="Gem ret" Command="{Binding GemRetCommand}"
-                    Grid.Row="5"
-                    HorizontalAlignment="Center"/>
+        <Button Content="Gem ret" 
+                Click="GemRet_Click"
+                Grid.Row="5"
+                HorizontalAlignment="Center"/>
        
 
 

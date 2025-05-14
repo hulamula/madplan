@@ -24,6 +24,5 @@
                 HorizontalAlignment="Right"
                 Click="RedigerRetterKnap_Click"
                 />
-
     </Grid>
 </Window>
