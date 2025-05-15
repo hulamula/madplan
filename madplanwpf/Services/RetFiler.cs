@@ -82,6 +82,7 @@ namespace madplanwpf.Services
 
             File.WriteAllText(filnavn, jsonString);
 
+
         }
     }
 }

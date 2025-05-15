@@ -17,6 +17,9 @@ namespace madplanwpf
         //declare liste ValgteRetter - udfyldes via combobox, overføres til nyt vindue
         private List<Ret> ValgteRetter;
 
+        //declare string filSti - udfyldes via combobox, overføres til nyt vindue
+        private string filSti;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -36,7 +39,7 @@ namespace madplanwpf
                 //filnavn er Tag (som string)
                 string filnavn = valgtFil.Tag.ToString();
                 //filstil er combination af .exe-filens placering + filnavn
-                string filSti = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, filnavn);
+                filSti = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, filnavn);
 
 
                 //hvis der findes en fil på stien
@@ -67,7 +70,7 @@ namespace madplanwpf
         private void RedigerRetterKnap_Click(object sender, RoutedEventArgs e)
         {
             //åbn RetterWindow
-            RetterWindow vindue = new RetterWindow(ValgteRetter);
+            RetterWindow vindue = new RetterWindow(ValgteRetter, filSti);
             vindue.Show();
         }
     }

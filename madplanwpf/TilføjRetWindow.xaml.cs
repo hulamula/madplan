@@ -1,19 +1,28 @@
 ﻿using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Input;
+using madplanwpf.Models;
+using madplanwpf.Services;
 
 namespace madplanwpf
 {
     /// <summary>
-    /// Interaction logic for Tilføj_Ret.xaml
+    /// Interaction logic for TilføjRetWindow.xaml
     /// </summary>
     public partial class TilføjRetWindow : Window
     {
-        public TilføjRetWindow()
+        private List<Ret> retter;
+        private string filsti;
+
+        public TilføjRetWindow(List<Ret> retter, string filsti)
         {
             InitializeComponent();
+            this.retter = retter;
+            this.filsti = filsti;
             RetIngrediensBox.ItemsSource = ingredienser;
         }
+
+
 
         private ObservableCollection<string> ingredienser = new ObservableCollection<string>();
 
@@ -44,7 +53,13 @@ namespace madplanwpf
 
         private void GemRet_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Kommer!");
+            string navn = RetNavnBox.Text.Trim();
+            List<string> ingrediensListe = ingredienser.ToList();
+            Ret nyRet = new Ret(navn, ingrediensListe);
+            retter.Add(nyRet);
+            RetFiler.ValgtRetFilNavn = filsti;
+            RetFiler.GemRet(nyRet);
+            this.Close();
         }
     }
 }

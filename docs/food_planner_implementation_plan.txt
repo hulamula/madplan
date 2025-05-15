@@ -1,96 +1,91 @@
+# 🧾 Revised Implementation Plan – Food Planner App (No MVVM)
 
-### Revised Implementation Plan for the Food Planner App
+## ✅ 1. Core Logic (Console Version)
 
-#### 1. Core Logic Development (Console Version)
-Focus on building robust core functionalities using a console-based approach.
+### 1.1 MVP Features
+- [x] **Add & Save Dishes**  
+  Add dishes with name + ingredients and store them in JSON.
 
-**1.1 Basic Features (MVP)**
-- [x] Input and Save Dishes: 
-  - Allow users to add new dishes with names and ingredients.
-  - Save dishes to a JSON file.
-- [x] Test Data for Initial Development:
-  - Create a sample JSON file with 10-20 dishes for testing.
-- [x] Load Dishes from JSON:
-  - Retrieve saved dishes from the file.
-- [ ] Generate Weekly Meal Plan:
-  - [x] Create method to assign dishes to each day of the week.
-  - [x] Implement method in main and test if working.
-  - [x] Add safety check to handle empty dish list.
-  - [x] Change weekdays to be displayed in Danish.
-  - [x] Change week start from Sunday to Monday.
-- [x] Generate Shopping List:
-  - Aggregate ingredients from the planned dishes.
-- [x] Save and Load Plans:
-  - Save the generated meal plan and shopping list.
+- [x] **Test Datasets**  
+  Create sample data for testing.
 
----
+- [x] **Load Dishes from File**  
+  Read dish list from JSON.
 
-#### 2. WPF Integration (User Interface Enhancement)
-Transition to a graphical interface while ensuring core functionality.
+- [x] **Generate Meal Plan**  
+  - Assign dishes to weekdays  
+  - Show Danish weekdays  
+  - Week starts on Monday  
+  - Safety check for empty dish list
 
-**2.0 Preparation:**
-- [x] **Commit to GitHub:**
-  - Set up version control with commits and GitHub repository.
-- [x] **Compartmentalize Code:**
-  - Organize models, services, and UI logic into clean namespaces/folders.
+- [x] **Generate Shopping List**  
+  Collect all ingredients from planned dishes.
 
-
-**2.1 Initial WPF Setup:**
-- [x] Project Setup:
-  - Create a new WPF project linked to the core logic library.
-- [ ] **Basic UI Structure**  
-  - [ ] **Step 1:** Load and display saved dishes in a ListView  
-  - [ ] **Step 2:** Add dishes via form (name + ingredients)
-- [ ] **Generate and Display Meal Plan**  
-  - [ ] **Step 3:** Generate weekly plan using button  
-  - [ ] **Step 4:** Display plan with weekday names
-- [ ] **Display Shopping List**  
-  - [ ] **Step 5:** Aggregate + show shopping list visually  
-  - [ ] **Step 6:** Add save functionality for plan and list
-
-
-**2.2 Core Logic Migration:**
-- [ ] Linking Backend to UI:
-  - Connect existing methods to WPF controls (e.g., buttons, list views).
-- [ ] Data Binding and MVVM Setup:
-  - Structure the project using the MVVM pattern.
+- [x] **Save/Load Plans**  
+  Save weekly plan + shopping list to disk.
 
 ---
 
-#### 3. Enhanced Features (Primarily in WPF)
-Implement these once the basic WPF version is working smoothly.
+## 🖼️ 2. WPF Integration (Code-Behind Approach)
 
-**3.1 Customizable Meal Plans:**
-- [ ] Save User Preferences:
-  - Store how many days per week the user typically cooks.
-- [ ] Plan Editing:
-  - Allow users to mark days as 'leftovers,' 'eating out,' or 'takeaway.'
-  - Clear specific days from the generated plan.
-- [ ] Fixed Dish Options: 
-  - Allow users to specify a few fixed dishes for the week, while the rest are randomized.
-- [ ] Weekday Name Display:
-  - Use simple weekday names instead of a complex calendar UI.
+### 2.0 Setup
+- [x] **GitHub Repository**  
+  Source control + commits.
 
+- [x] **Folder Structure**  
+  Separate models, services, and windows.
 
-**3.2 Customizable Shopping Lists:**
-- [ ] Item Editing:
-  - Remove or modify items from the list.
-- [ ] Always-Stocked Ingredients:
-  - Let users define basic items that don’t need to be added to the list.
-- [ ] Supermarket Organization:
-  - Group ingredients by category (e.g., fruits, dairy).
-  - Use a reference list of ~500 common ingredients sorted by store section.
+### 2.1 UI Features (Code-Behind Only)
+- [x] **File Selection**  
+  Choose JSON source file via ComboBox in `MainWindow`.
 
-**3.3 Enhanced Meal Planning:**
-- [ ] Starred Dishes:
-  - Let users mark favorite dishes for increased planning frequency.
-- [ ] Preference Saving:
-  - Save commonly cooked dishes and cooking frequency.
+- [x] **View Dishes**  
+  Show dish list in `RetterWindow`.
+
+- [x] **Add Dish UI**  
+  - Open `TilføjRetWindow` from `RetterWindow`  
+  - Input name + ingredients  
+  - Save to shared list + file using service  
+  - Refresh `RetterListView`
+
+- [ ] **Edit & Delete Dishes**  
+  Enable inline editing and removal (planned).
+
+- [ ] **Meal Plan UI**  
+  Generate and display a plan via button click.
+
+- [ ] **Shopping List UI**  
+  Display list and save option.
+
+### 2.2 Logic Hookups
+- [x] Use shared data between windows
+- [x] Reuse existing JSON service (`RetFiler`)
+- [ ] Add safety + input validation (planned)
+- [ ] Improve data feedback (e.g., message on save)
 
 ---
 
-#### 4. Ongoing Maintenance and Improvements
-- [ ] Performance Optimization:
-  - Improve loading times when managing large dish collections.
-- [ ] Data Validation:
-  - Prevent duplicate or empty dish entries.
+## ✨ 3. Enhanced Features (Post-MVP)
+
+### 3.1 Flexible Meal Planning
+- [ ] Support leftover/eating out/takeaway days
+- [ ] Fix specific dishes for given days
+- [ ] Skip plan generation for certain weekdays
+
+### 3.2 Smarter Shopping Lists
+- [ ] Let user edit/remove list items
+- [ ] Allow "always-stocked" ingredients
+- [ ] Categorize by supermarket section  
+  (_Use 500-item reference list_)
+
+### 3.3 Preferences
+- [ ] Mark favorite/starred dishes for more frequent use
+- [ ] Store user cooking patterns (days per week, preferred meals)
+
+---
+
+## 🛠️ 4. Ongoing Improvements
+- [ ] Input validation (empty/duplicate names)
+- [ ] Performance for larger datasets
+- [ ] UI polish and feedback messages
+- [ ] Optional: explore MVVM later for better scaling
