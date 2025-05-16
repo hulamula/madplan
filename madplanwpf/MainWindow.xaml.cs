@@ -3,6 +3,8 @@ using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
 using madplanwpf.Models;
+using madplanwpf.Services;
+using madplanwpf.Utilities;
 
 
 
@@ -73,5 +75,24 @@ namespace madplanwpf
             RetterWindow vindue = new RetterWindow(ValgteRetter, filSti);
             vindue.Show();
         }
-    }
+        private void GenererMadplanKnap_Click(object sender, RoutedEventArgs e)
+        {
+            if (ValgteRetter == null || ValgteRetter.Count == 0)
+            {
+                MessageBox.Show("Vælg en liste med retter");
+                return;
+            }
+            //generer madplan via metode fra PlanGen.cs
+            Dictionary<DayOfWeek, Ret> nyMadplan = PlanGen.LavPlan(ValgteRetter);
+
+            //udfyld listbox med madplan 
+            nyMadplanListbox.Items.Clear();
+            foreach (var dagRet in nyMadplan)
+            {
+                string danskUgedag = DanskeUgedage.Navne[dagRet.Key];
+                string ret = dagRet.Value.Navn;
+                nyMadplanListbox.Items.Add($"{danskUgedag}:     {ret}");
+            }
+        }
+}
 }

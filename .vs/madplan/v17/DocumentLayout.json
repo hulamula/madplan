@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FC92B747-4E0C-4895-A6F1-51F32E7CFD03}|madplanwpf\\madplanwpf.csproj|c:\\users\\niels\\google drive\\dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC92B747-4E0C-4895-A6F1-51F32E7CFD03}|madplanwpf\\madplanwpf.csproj|solutionrelative:madplanwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "madplanwpf\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\niels\\Google Drive\\Dokumenter\\2025\\dtu grundl\u00E6ggende objektorienteret programmering c# oop\\madplan\\madplanwpf\\MainWindow.xaml.cs",
+              "RelativeToolTip": "madplanwpf\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAwwE0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T19:35:37.509Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

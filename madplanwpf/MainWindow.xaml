@@ -24,5 +24,22 @@
                 HorizontalAlignment="Right"
                 Click="RedigerRetterKnap_Click"
                 />
+        <Button Content="Generer madplan"
+                Name="GenererMadplanKnap"
+                Click="GenererMadplanKnap_Click"
+                Margin="100"
+                Width="200"
+                Height="50"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                FontSize="20"
+                FontWeight="Bold"
+                />
+        <ListBox Name="nyMadplanListbox"
+                 Margin="100"
+                 Height="400"
+                 />
+
+
     </Grid>
 </Window>
