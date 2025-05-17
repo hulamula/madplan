@@ -1,0 +1,25 @@
+
+## ✨ 3. Enhanced Features (Post-MVP)
+
+### 3.1 Flexible Meal Planning
+- [ ] Support leftover/eating out/takeaway days
+- [ ] Fix specific dishes for given days
+- [ ] Skip plan generation for certain weekdays
+
+### 3.2 Smarter Shopping Lists
+- [ ] Let user edit/remove list items
+- [ ] Allow "always-stocked" ingredients
+- [ ] Categorize by supermarket section  
+  (_Use 500-item reference list_)
+
+### 3.3 Preferences
+- [ ] Mark favorite/starred dishes for more frequent use
+- [ ] Store user cooking patterns (days per week, preferred meals)
+
+---
+
+## 🛠️ 4. Ongoing Improvements
+- [ ] Input validation (empty/duplicate names)
+- [ ] Performance for larger datasets
+- [ ] UI polish and feedback messages
+- [ ] Optional: explore MVVM later for better scaling

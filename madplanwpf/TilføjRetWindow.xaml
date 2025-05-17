@@ -41,6 +41,8 @@
         
         <!--input felt til ingredienser, DataTemplate gør muligt at udvide senere med fx rediger, fjern o.lign-->
         <TextBlock Text="Ingredienser:" Grid.Row="3"/>
+
+
         <ListBox 
             x:Name="RetIngrediensBox"
             ItemsSource="{Binding TilføjIngredienser}"
@@ -48,8 +50,15 @@
             Margin="0,5,0,5">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <!-- hver ingrediens vises som TextBox, binding til selve strengværdien -->
-                    <TextBlock Text="{Binding .}"/>
+                    <StackPanel>
+                        <!-- hver ingrediens vises som TextBox, binding til selve strengværdien -->
+                        <TextBox Text="{Binding .}"
+                                 Tag="{Binding}"
+                                 Width="150"
+                                 Margin="0,0,10,0"
+                                 LostFocus="Ingrediens_LostFocus"/>
+                        <Button Content="Slet" Click="SletIngrediens_Click" Tag="{Binding}" Padding="5,0"/>
+                    </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>

@@ -48,44 +48,32 @@
   - Save to shared list + file using service  
   - Refresh `RetterListView`
 
-- [ ] **Edit & Delete Dishes**  
+- [x] **Edit & Delete Dishes**  
   Enable inline editing and removal (planned).
 
-- [ ] **Meal Plan UI**  
+- [x] **Meal Plan UI**  
   Generate and display a plan via button click.
 
-- [ ] **Shopping List UI**  
+- [x] **Shopping List UI**  
   Display list and save option.
 
 ### 2.2 Logic Hookups
 - [x] Use shared data between windows
 - [x] Reuse existing JSON service (`RetFiler`)
-- [ ] Add safety + input validation (planned)
-- [ ] Improve data feedback (e.g., message on save)
+- [x] Add safety + input validation
+
+
+### 2.3 Semantic & Style cleanup
+
+- [ ] **Unify naming** conventions for clarity (`Ret`, `Ingrediens`, `Varer`, etc.)
+- [ ] **Consistent language**: choose between Danish/English for code identifiers
+- [ ] **Improve comments**:
+  - Keep them concise and meaningful
+  - Focus on *why* rather than *what*
+- [ ] **Clarify method names**: prefer descriptive verbs like `GenererMadplan`, `TilføjIngredienserFraMadplan`
+- [ ] **Structure logic cleanly**: group related code, consider utility/helper classes
+- [ ] **Standardize formatting**: indentation, spacing, and line breaks
+- [ ] **Remove TODOs and test code** used during implementation
 
 ---
 
-## ✨ 3. Enhanced Features (Post-MVP)
-
-### 3.1 Flexible Meal Planning
-- [ ] Support leftover/eating out/takeaway days
-- [ ] Fix specific dishes for given days
-- [ ] Skip plan generation for certain weekdays
-
-### 3.2 Smarter Shopping Lists
-- [ ] Let user edit/remove list items
-- [ ] Allow "always-stocked" ingredients
-- [ ] Categorize by supermarket section  
-  (_Use 500-item reference list_)
-
-### 3.3 Preferences
-- [ ] Mark favorite/starred dishes for more frequent use
-- [ ] Store user cooking patterns (days per week, preferred meals)
-
----
-
-## 🛠️ 4. Ongoing Improvements
-- [ ] Input validation (empty/duplicate names)
-- [ ] Performance for larger datasets
-- [ ] UI polish and feedback messages
-- [ ] Optional: explore MVVM later for better scaling

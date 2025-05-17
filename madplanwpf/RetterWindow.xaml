@@ -10,19 +10,37 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         
         <Button Content="Tilføj ret"
                 Grid.Row="0"
                 Click="TilføjRet_Click"
         />
-        <ListView x:Name="RetterListView"
-                  Grid.Row="1">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="Navn" DisplayMemberBinding="{Binding Navn}"/>
-                </GridView>
-            </ListView.View>
-        </ListView>
+        <ListBox x:Name="RedigerRetterListbox"
+                 Grid.Row="1"
+                 Margin="10">
+
+        <ListBox.ItemTemplate>
+            <DataTemplate>
+                <StackPanel Orientation="Horizontal" Margin="0,5">
+                    <TextBlock Text="{Binding Navn}"
+                                VerticalAlignment="Center" Margin='0,0,10,0'/>
+                    <Button Content="Slet" Click="RetterListSlet_Click" Tag="{Binding}"
+                            Padding="5,0"/>
+                    <Button Content="Redigér" Click="RetterListRediger_Click" Tag="{Binding}"/>
+                </StackPanel>
+            </DataTemplate>         
+        </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Button Content="Gem"
+                Grid.Row="2"
+                Click="RetterWindowGem_Click"
+                HorizontalAlignment="Center"
+                Margin="10"
+                />
+
+
     </Grid>
 </Window>

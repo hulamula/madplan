@@ -2,6 +2,7 @@
 using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using madplanwpf.Models;
 using madplanwpf.Services;
 using madplanwpf.Utilities;
@@ -10,23 +11,37 @@ using madplanwpf.Utilities;
 
 namespace madplanwpf
 {
-    
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         //declare liste ValgteRetter - udfyldes via combobox, overføres til nyt vindue
         private List<Ret> ValgteRetter;
 
         //declare string filSti - udfyldes via combobox, overføres til nyt vindue
         private string filSti;
 
+        //declare list<String> indkøbsListe - udfyldes ifbm. generérplan, overføres til nyt vindue
+        private List<string> indkøbsListe = new List<string>();
+
         public MainWindow()
         {
             InitializeComponent();
+            VisIndkøbslisteKnap.IsEnabled = false;
         }
 
+        //tillad luk vindue via escape
+        protected override void OnPreviewKeyDown(KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+            {
+                this.Close();
+            }
+            base.OnPreviewKeyDown(e);
+        }
 
         /// <summary>
         /// når indhold vælges i combobox
@@ -45,30 +60,29 @@ namespace madplanwpf
 
 
                 //hvis der findes en fil på stien
-                if (File.Exists(filSti) )
+                if (File.Exists(filSti))
                 {
                     try
                     {
-                        //læs indhold af fil og gem til string
-                        string jsonIndhold = File.ReadAllText(filSti);
-                        //json-deserialize string til List<T> af typen Ret kaldet "ValgteRetter"
-                        ValgteRetter = JsonSerializer.Deserialize<List<Ret>>(jsonIndhold);
-                        MessageBox.Show($"Indlæst {ValgteRetter.Count} retter");
+                        RetFiler.ValgtRetFilNavn = filSti;
+                        ValgteRetter = RetFiler.HentRetter();
                     }
-                        //hvis ikke muligt at læse indhold eller ikke muligt at deserialize giv fejlmeddelelse
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show($"Fejl i indlæsning: {ex.Message}");
-                        }
+                    //hvis ikke muligt at læse indhold eller ikke muligt at deserialize giv fejlmeddelelse
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Fejl i indlæsning: {ex.Message}");
+                    }
                 }
                 //hvis ingen fil på sti giv fejlmeddelelse
                 else
                 {
-                        MessageBox.Show("Fil ikke fundet");
+                    MessageBox.Show("Fil ikke fundet");
                 }
 
             }
         }
+
+
         private void RedigerRetterKnap_Click(object sender, RoutedEventArgs e)
         {
             //åbn RetterWindow
@@ -85,6 +99,16 @@ namespace madplanwpf
             //generer madplan via metode fra PlanGen.cs
             Dictionary<DayOfWeek, Ret> nyMadplan = PlanGen.LavPlan(ValgteRetter);
 
+            //tilføj retter fra ugePlan til liste
+            List<Ret> planlagteRetter = nyMadplan.Values.ToList();
+            //opret indkøbsliste list
+            Indkøbsliste genereretIndkøbsListe = new Indkøbsliste();
+            //fyld indkøbsliste med ingredienser fra planlagteretter
+            genereretIndkøbsListe.TilføjIngredienserFraMadplan(planlagteRetter);
+            //udfyld private field IndkøbsListe med denne liste
+            indkøbsListe = genereretIndkøbsListe.Varer;
+
+
             //udfyld listbox med madplan 
             nyMadplanListbox.Items.Clear();
             foreach (var dagRet in nyMadplan)
@@ -93,6 +117,18 @@ namespace madplanwpf
                 string ret = dagRet.Value.Navn;
                 nyMadplanListbox.Items.Add($"{danskUgedag}:     {ret}");
             }
+            VisIndkøbslisteKnap.IsEnabled = true;
+
         }
-}
+
+        //når man klikker på "Vis indkøbsliste knappen"
+        private void VisIndkøbslisteKnap_click (object sender, RoutedEventArgs e)
+
+            //åbn vindue IndkøbslisteWindow
+            {
+            IndkøbsListeWindow vindue = new IndkøbsListeWindow(indkøbsListe);
+            vindue.ShowDialog();
+            }
+
+    }
 }

@@ -31,16 +31,20 @@ namespace madplanwpf.Services
 
  
         //gem indkøbsliste til .txt
-        public void GemIndkøbsliste()
+        public static void GemIndkøbsliste(List<string> varer, string sti)
         {
-            int ugeNummer = ISOWeek.GetWeekOfYear(DateTime.Now);
-            string filNavn = $"Indkøbsliste uge {ugeNummer}.txt";
+            if (varer is null)
+            {
+                throw new ArgumentNullException(nameof(varer));
+            }
 
-            using (StreamWriter writer = new StreamWriter(filNavn))
+            int ugeNummer = ISOWeek.GetWeekOfYear(DateTime.Now);
+
+            using (StreamWriter writer = new StreamWriter(sti))
             {
                 writer.WriteLine($"Indkøbsliste uge {ugeNummer}");
 
-                foreach (string vare in Varer)
+                foreach (string vare in varer)
                 {
                     writer.WriteLine($"- {vare}");
                 }

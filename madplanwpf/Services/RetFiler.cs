@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
-using madplanwpf.Models;
+﻿using System.Globalization;
 using System.IO;        // For File, StreamWriter, StreamReader, Path
-using System.Text.Json; // For JSON handling, if needed
+using System.Text.Json;
+using System.Windows; // For JSON handling, if needed
+using madplanwpf.Models;
 
 
 namespace madplanwpf.Services
@@ -17,6 +12,7 @@ namespace madplanwpf.Services
     /// </summary>
     public class RetFiler
     {
+                
         //indstil JsonSerializerOptions
         //WriteIndented giver menneskeligt læsbar json
         //Encoder gør at json ikke "undgår" æ ø å'er
@@ -32,6 +28,22 @@ namespace madplanwpf.Services
         public static string BrugerRetter = "Retter.json";
         public static string StandardRetter = "DefaultRetter.json";
 
+        public static void CaseFixer(List<Ret> retter)
+        {
+            foreach (Ret ret in retter)
+            {
+                if (!string.IsNullOrEmpty(ret.Navn))
+                {
+                    ret.Navn = char.ToUpper(ret.Navn[0]) + ret.Navn.Substring(1).ToLower();
+                }
+                if (ret.Ingredienser != null)
+                {
+                    ret.Ingredienser = ret.Ingredienser.Select(i => i.ToLower()).ToList();
+                }
+
+            }
+        }
+
         //metode til at hente liste med retter fra fil
         public static List<Ret> HentRetter()
         {
@@ -44,7 +56,9 @@ namespace madplanwpf.Services
                 string jsonString = File.ReadAllText(ValgtRetFilNavn);
                 if (!string.IsNullOrEmpty(jsonString))
                 {
-                    return JsonSerializer.Deserialize<List<Ret>>(jsonString) ?? new List<Ret>();
+                    List<Ret> retter = JsonSerializer.Deserialize<List<Ret>>(jsonString) ?? new List<Ret>();
+                    CaseFixer(retter);
+                    return retter;
                 }
 
             }
@@ -56,33 +70,51 @@ namespace madplanwpf.Services
 
 
         //public metode til at gemme en ret, kan måske gøres privat senere
-        public static void GemRet(Ret ret)
+        public static void GemNyRet(Ret ret)
         {
+            if (ret == null)
+            {
+                return;
+            }
+
             //hent eksisterende retfil
             List<Ret> retter = HentRetter();
-
-            //sæt ret-nummer 
 
             //tilføj ny ret til liste
             retter.Add(ret);
 
+            //fix case
+            CaseFixer(retter);
+
             //skriv liste med eksisterende + ny ret til
             string jsonString = JsonSerializer.Serialize(retter, indstillinger);
-            File.WriteAllText(ValgtRetFilNavn, jsonString);
+            try
+            {
+                File.WriteAllText(ValgtRetFilNavn, jsonString);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Fejl ved gem: " + ex.Message);
+            }
+            
         }
 
-        //public metode til at gemme en UgePlan som json
-        public static void GemUgePlan(Dictionary<DayOfWeek, Ret> ugePlan)
+        //public metode til at gemme liste med retter 
+        public static void GemRetter(List<Ret> retter, string sti)
         {
-            int ugeNummer = ISOWeek.GetWeekOfYear(DateTime.Now);
+            //fix case
+            CaseFixer(retter);
 
-            string filnavn = $"Madplan uge {ugeNummer}.json";
-
-            string jsonString = JsonSerializer.Serialize(ugePlan, indstillinger);
-
-            File.WriteAllText(filnavn, jsonString);
-
-
+            //skriv liste med retter 
+            string jsonString = JsonSerializer.Serialize(retter, indstillinger);
+            try
+            {
+                File.WriteAllText(sti, jsonString);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Fejl ved gem: " + ex.Message);
+            }
         }
     }
 }

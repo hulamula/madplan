@@ -1,0 +1,27 @@
+﻿<Window x:Class="madplanwpf.IndkøbsListeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:madplanwpf"
+        mc:Ignorable="d"
+        Title="IndkøbsListeWindow" Height="450" Width="200">
+    <StackPanel>
+        <TextBlock Text="Indkøbsliste"
+                   FontSize="15"
+                   FontWeight="Bold"
+                   Margin="10"
+                   HorizontalAlignment="Center"
+                   />
+
+        <ListBox x:Name="IndkøbslisteListbox"
+                 Margin="10"
+                 Height="300"
+                 ScrollViewer.VerticalScrollBarVisibility="Auto"
+                 />
+        <Button Name="GemIndkøbslisteKnap"
+                Content="Gem indkøbsliste"
+                Click="GemIndkøbslisteKnap_click"
+                />
+    </StackPanel>
+</Window>
