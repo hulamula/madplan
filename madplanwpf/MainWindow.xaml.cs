@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -24,8 +23,8 @@ namespace madplanwpf
         //declare string filSti - udfyldes via combobox, overføres til nyt vindue
         private string filSti;
 
-        //declare list<String> indkøbsListe - udfyldes ifbm. generérplan, overføres til nyt vindue
-        private List<string> indkøbsListe = new List<string>();
+        //declare object _indkøbsListe - udfyldes ifbm. generérplan, overføres til nyt vindue
+        Indkøbsliste _indkøbsliste = new Indkøbsliste();
 
         public MainWindow()
         {
@@ -101,12 +100,9 @@ namespace madplanwpf
 
             //tilføj retter fra ugePlan til liste
             List<Ret> planlagteRetter = nyMadplan.Values.ToList();
-            //opret indkøbsliste list
-            Indkøbsliste genereretIndkøbsListe = new Indkøbsliste();
-            //fyld indkøbsliste med ingredienser fra planlagteretter
-            genereretIndkøbsListe.TilføjIngredienserFraMadplan(planlagteRetter);
-            //udfyld private field IndkøbsListe med denne liste
-            indkøbsListe = genereretIndkøbsListe.Varer;
+            //fyld ny _indkøbsliste med ingredienser fra planlagteretter
+            _indkøbsliste = new Indkøbsliste();
+            _indkøbsliste.TilføjIngredienserFraMadplan(planlagteRetter);
 
 
             //udfyld listbox med madplan 
@@ -126,7 +122,7 @@ namespace madplanwpf
 
             //åbn vindue IndkøbslisteWindow
             {
-            IndkøbsListeWindow vindue = new IndkøbsListeWindow(indkøbsListe);
+            IndkøbsListeWindow vindue = new IndkøbsListeWindow(_indkøbsliste);
             vindue.ShowDialog();
             }
 

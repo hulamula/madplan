@@ -45,7 +45,6 @@
 
         <ListBox 
             x:Name="RetIngrediensBox"
-            ItemsSource="{Binding TilføjIngredienser}"
             Grid.Row="4"
             Margin="0,5,0,5">
             <ListBox.ItemTemplate>

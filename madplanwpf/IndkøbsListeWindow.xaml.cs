@@ -22,12 +22,12 @@ namespace madplanwpf
     /// </summary>
     public partial class IndkøbsListeWindow : Window
     {
-        private List<string> varer;
-        public IndkøbsListeWindow(List<string> varer)
+        private Indkøbsliste _indkøbsliste;
+        public IndkøbsListeWindow(Indkøbsliste indkøbsliste)
         {
             InitializeComponent();
-            this.varer = varer;
-            IndkøbslisteListbox.ItemsSource= varer;
+            _indkøbsliste = indkøbsliste;
+            IndkøbslisteListbox.ItemsSource= indkøbsliste.Varer;
         }
 
         //tillad luk vindue via escape
@@ -49,7 +49,7 @@ namespace madplanwpf
             if (saveFileDialog.ShowDialog() == true)
             {
                 string filSti = saveFileDialog.FileName;
-                Indkøbsliste.GemIndkøbsliste(varer, filSti);
+                _indkøbsliste.GemIndkøbsliste(filSti);
                 MessageBox.Show($"Gemt til {filSti}");
             }
 

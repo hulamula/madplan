@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using madplanwpf.Models;
+﻿using madplanwpf.Models;
 using madplanwpf.Utilities;
-using System.IO;        // For File, StreamWriter, StreamReader, Path
-using System.Text.Json; // For JSON handling, if needed
 
 
 namespace madplanwpf.Services
@@ -33,6 +26,9 @@ namespace madplanwpf.Services
 
             //giv hver nøgle en værdi
             int index = 0;
+
+            //udfyld dictionary med vilkårlige retter
+            //brug modulo "%" til at genbruge retter hvis listen er kortere end 7
             foreach (DayOfWeek dag in DanskeUgedage.ugeStartMandag)
             {
                 ugePlan[dag] = randomretter[index % randomretter.Count];

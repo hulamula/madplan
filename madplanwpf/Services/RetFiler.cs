@@ -25,8 +25,8 @@ namespace madplanwpf.Services
         //navngiv fil til brug for JSON (initialiser som ikke-null tom "")
         //navngiv filer med hhv. standard- og brugerinputtede retter
         public static string ValgtRetFilNavn = string.Empty;
-        public static string BrugerRetter = "Retter.json";
-        public static string StandardRetter = "DefaultRetter.json";
+        public const string BrugerRetter = "Retter.json";
+        public const string StandardRetter = "DefaultRetter.json";
 
         public static void CaseFixer(List<Ret> retter)
         {

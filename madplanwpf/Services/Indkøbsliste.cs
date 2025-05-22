@@ -8,12 +8,12 @@ namespace madplanwpf.Services
     /// <summary>
     /// tilføj ingredienser fra ret til vareliste og exporter til .txt
     /// </summary>
-    class Indkøbsliste
+    public class Indkøbsliste
     {
         //declare en liste Varer med property
         public List<string> Varer { get; set; }
 
-        //konstruktør af vareliste så Varer ikke er tom/null
+        //konstruktør af vareliste der sikrer at Varer ikke er tom/null
         public Indkøbsliste()
         {
             Varer = new List<string>();
@@ -31,24 +31,19 @@ namespace madplanwpf.Services
 
  
         //gem indkøbsliste til .txt
-        public static void GemIndkøbsliste(List<string> varer, string sti)
+        public void GemIndkøbsliste(string sti)
         {
-            if (varer is null)
-            {
-                throw new ArgumentNullException(nameof(varer));
-            }
-
             int ugeNummer = ISOWeek.GetWeekOfYear(DateTime.Now);
 
             using (StreamWriter writer = new StreamWriter(sti))
             {
                 writer.WriteLine($"Indkøbsliste uge {ugeNummer}");
 
-                foreach (string vare in varer)
+                foreach (string vare in Varer)
                 {
                     writer.WriteLine($"- {vare}");
                 }
-
+            
             }
         }
     }

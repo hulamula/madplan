@@ -2,324 +2,294 @@
   {
     "Navn": "Grøntsagswok",
     "Ingredienser": [
-      "Grøntsager",
-      "Soja",
-      "Hvidløg",
-      "Ingefær",
-      "Tofu",
-      "Sesamolie"
-    ],
-    "Nummer": 1
+      "grøntsager",
+      "soja",
+      "hvidløg",
+      "ingefær",
+      "tofu",
+      "sesamolie"
+    ]
   },
   {
     "Navn": "Kikærtekarry",
     "Ingredienser": [
-      "Kikærter",
-      "Tomater",
-      "Kokosmælk",
-      "Karrypulver",
-      "Løg"
-    ],
-    "Nummer": 2
+      "kikærter",
+      "tomater",
+      "kokosmælk",
+      "karrypulver",
+      "løg"
+    ]
   },
   {
-    "Navn": "Pasta Primavera",
+    "Navn": "Pasta primavera",
     "Ingredienser": [
-      "Pasta",
-      "Peberfrugter",
-      "Cherrytomater",
-      "Squash",
-      "Olivenolie"
-    ],
-    "Nummer": 3
+      "pasta",
+      "peberfrugter",
+      "cherrytomater",
+      "squash",
+      "olivenolie"
+    ]
   },
   {
     "Navn": "Vegetarisk chili",
     "Ingredienser": [
-      "Bønner",
-      "Tomater",
-      "Peberfrugt",
-      "Majs",
-      "Chilipulver"
-    ],
-    "Nummer": 4
+      "bønner",
+      "tomater",
+      "peberfrugt",
+      "majs",
+      "chilipulver"
+    ]
   },
   {
     "Navn": "Linsegryde",
     "Ingredienser": [
-      "Linser",
-      "Gulerødder",
-      "Selleri",
-      "Løg",
-      "Grøntsagsbouillon"
-    ],
-    "Nummer": 5
+      "linser",
+      "gulerødder",
+      "selleri",
+      "løg",
+      "grøntsagsbouillon"
+    ]
   },
   {
     "Navn": "Svamperisotto",
     "Ingredienser": [
-      "Arborioris",
-      "Svampe",
-      "Grøntsagsbouillon",
-      "Hvidløg",
-      "Løg"
-    ],
-    "Nummer": 6
+      "arborioris",
+      "svampe",
+      "grøntsagsbouillon",
+      "hvidløg",
+      "løg"
+    ]
   },
   {
     "Navn": "Fyldte peberfrugter",
     "Ingredienser": [
-      "Peberfrugter",
-      "Ris",
-      "Bønner",
-      "Tomater",
-      "Ost"
-    ],
-    "Nummer": 7
+      "peberfrugter",
+      "ris",
+      "bønner",
+      "tomater",
+      "ost"
+    ]
   },
   {
-    "Navn": "Aubergine Parmigiana",
+    "Navn": "Aubergine parmigiana",
     "Ingredienser": [
-      "Aubergine",
-      "Tomatsauce",
-      "Mozzarella",
-      "Parmesan",
-      "Rasp"
-    ],
-    "Nummer": 8
+      "aubergine",
+      "tomatsauce",
+      "mozzarella",
+      "parmesan",
+      "rasp"
+    ]
   },
   {
     "Navn": "Grøntsagslasagne",
     "Ingredienser": [
-      "Lasagneplader",
-      "Spinat",
-      "Ricotta",
-      "Tomatsauce",
-      "Mozzarella"
-    ],
-    "Nummer": 9
+      "lasagneplader",
+      "spinat",
+      "ricotta",
+      "tomatsauce",
+      "mozzarella"
+    ]
   },
   {
     "Navn": "Falafelwrap",
     "Ingredienser": [
-      "Falafel",
-      "Pita",
-      "Hummus",
-      "Agurk",
-      "Tomat",
-      "Salat"
-    ],
-    "Nummer": 10
+      "falafel",
+      "pita",
+      "hummus",
+      "agurk",
+      "tomat",
+      "salat"
+    ]
   },
   {
     "Navn": "Sorte bønnetacos",
     "Ingredienser": [
-      "Sorte bønner",
-      "Majs",
-      "Avocado",
-      "Salsa",
-      "Tortillaskaller"
-    ],
-    "Nummer": 11
+      "sorte bønner",
+      "majs",
+      "avocado",
+      "salsa",
+      "tortillaskaller"
+    ]
   },
   {
     "Navn": "Caprese-salat",
     "Ingredienser": [
-      "Tomater",
-      "Mozzarella",
-      "Basilikum",
-      "Balsamico"
-    ],
-    "Nummer": 12
+      "tomater",
+      "mozzarella",
+      "basilikum",
+      "balsamico"
+    ]
   },
   {
     "Navn": "Vegetarisk paella",
     "Ingredienser": [
-      "Ris",
-      "Safran",
-      "Ærter",
-      "Peberfrugt",
-      "Artiskokhjerter"
-    ],
-    "Nummer": 13
+      "ris",
+      "safran",
+      "ærter",
+      "peberfrugt",
+      "artiskokhjerter"
+    ]
   },
   {
     "Navn": "Spinatquiche",
     "Ingredienser": [
-      "Spinat",
-      "Æg",
-      "Ost",
-      "Tærtedej",
-      "Løg"
-    ],
-    "Nummer": 14
+      "spinat",
+      "æg",
+      "ost",
+      "tærtedej",
+      "løg"
+    ]
   },
   {
     "Navn": "Sød kartoffelkarry",
     "Ingredienser": [
-      "Sød kartoffel",
-      "Kikærter",
-      "Kokosmælk",
-      "Karrypulver"
-    ],
-    "Nummer": 15
+      "sød kartoffel",
+      "kikærter",
+      "kokosmælk",
+      "karrypulver"
+    ]
   },
   {
     "Navn": "Vegetarpizza",
     "Ingredienser": [
-      "Pizzadej",
-      "Tomatsauce",
-      "Mozzarella",
-      "Peberfrugt",
-      "Oliven"
-    ],
-    "Nummer": 16
+      "pizzadej",
+      "tomatsauce",
+      "mozzarella",
+      "peberfrugt",
+      "oliven"
+    ]
   },
   {
     "Navn": "Blomkålstacos",
     "Ingredienser": [
-      "Blomkål",
-      "Salsa",
-      "Avocado",
-      "Tortilla"
-    ],
-    "Nummer": 17
+      "blomkål",
+      "salsa",
+      "avocado",
+      "tortilla"
+    ]
   },
   {
     "Navn": "Squashfrikadeller",
     "Ingredienser": [
-      "Squash",
-      "Mel",
-      "Æg",
-      "Ost",
-      "Krydderurter"
-    ],
-    "Nummer": 18
+      "squash",
+      "mel",
+      "æg",
+      "ost",
+      "krydderurter"
+    ]
   },
   {
     "Navn": "Grøntsagssushi",
     "Ingredienser": [
-      "Sushiris",
-      "Agurk",
-      "Avocado",
-      "Noriark"
-    ],
-    "Nummer": 19
+      "sushiris",
+      "agurk",
+      "avocado",
+      "noriark"
+    ]
   },
   {
-    "Navn": "Chana Masala",
+    "Navn": "Chana masala",
     "Ingredienser": [
-      "Kikærter",
-      "Tomater",
-      "Løg",
-      "Hvidløg",
-      "Indiske krydderier"
-    ],
-    "Nummer": 20
+      "kikærter",
+      "tomater",
+      "løg",
+      "hvidløg",
+      "indiske krydderier"
+    ]
   },
   {
     "Navn": "Tomat-basilikumsuppe",
     "Ingredienser": [
-      "Tomater",
-      "Basilikum",
-      "Løg",
-      "Hvidløg",
-      "Bouillon"
-    ],
-    "Nummer": 21
+      "tomater",
+      "basilikum",
+      "løg",
+      "hvidløg",
+      "bouillon"
+    ]
   },
   {
     "Navn": "Vegetarisk moussaka",
     "Ingredienser": [
-      "Aubergine",
-      "Kartofler",
-      "Tomatsauce",
-      "Bechamelsauce"
-    ],
-    "Nummer": 22
+      "aubergine",
+      "kartofler",
+      "tomatsauce",
+      "bechamelsauce"
+    ]
   },
   {
     "Navn": "Grøntsagscurry",
     "Ingredienser": [
-      "Kartofler",
-      "Blomkål",
-      "Ærter",
-      "Kokosmælk",
-      "Karry"
-    ],
-    "Nummer": 23
+      "kartofler",
+      "blomkål",
+      "ærter",
+      "kokosmælk",
+      "karry"
+    ]
   },
   {
     "Navn": "Ratatouille",
     "Ingredienser": [
-      "Aubergine",
-      "Squash",
-      "Peberfrugt",
-      "Tomater",
-      "Krydderurter"
-    ],
-    "Nummer": 24
+      "aubergine",
+      "squash",
+      "peberfrugt",
+      "tomater",
+      "krydderurter"
+    ]
   },
   {
     "Navn": "Kikærtebøffer",
     "Ingredienser": [
-      "Kikærter",
-      "Løg",
-      "Hvidløg",
-      "Krydderurter",
-      "Mel"
-    ],
-    "Nummer": 25
+      "kikærter",
+      "løg",
+      "hvidløg",
+      "krydderurter",
+      "mel"
+    ]
   },
   {
     "Navn": "Grønkålssalat",
     "Ingredienser": [
-      "Grønkål",
-      "Æbler",
-      "Nødder",
-      "Dressing"
-    ],
-    "Nummer": 26
+      "grønkål",
+      "æbler",
+      "nødder",
+      "dressing"
+    ]
   },
   {
     "Navn": "Rødbedebøffer",
     "Ingredienser": [
-      "Rødbeder",
-      "Løg",
-      "Havregryn",
-      "Æg"
-    ],
-    "Nummer": 27
+      "rødbeder",
+      "løg",
+      "havregryn",
+      "æg"
+    ]
   },
   {
     "Navn": "Kartoffel-porretærte",
     "Ingredienser": [
-      "Kartoffel",
-      "Porre",
-      "Æg",
-      "Ost",
-      "Tærtedej"
-    ],
-    "Nummer": 28
+      "kartoffel",
+      "porre",
+      "æg",
+      "ost",
+      "tærtedej"
+    ]
   },
   {
     "Navn": "Pasta med pesto",
     "Ingredienser": [
-      "Pasta",
-      "Basilikumpesto",
-      "Cherrytomater",
-      "Pinjekerner"
-    ],
-    "Nummer": 29
+      "pasta",
+      "basilikumpesto",
+      "cherrytomater",
+      "pinjekerner"
+    ]
   },
   {
     "Navn": "Rødbedesuppe",
     "Ingredienser": [
-      "Rødbeder",
-      "Kartofler",
-      "Løg",
-      "Bouillon"
-    ],
-    "Nummer": 30
+      "rødbeder",
+      "kartofler",
+      "løg",
+      "bouillon"
+    ]
   }
 ]

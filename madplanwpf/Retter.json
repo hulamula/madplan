@@ -1,27 +1,16 @@
 [
   {
-    "Navn": "Pasta med pesto",
+    "Navn": "Blødkogt æg",
     "Ingredienser": [
-      "pasta",
-      "pesto"
-    ],
-    "Nummer": 1
+      "æg"
+    ]
   },
   {
-    "Navn": "blødkogt æg",
-    "Ingredienser": [
-      "æg",
-      "salt"
-    ],
-    "Nummer": 2
-  },
-  {
-    "Navn": "brød med ost",
+    "Navn": "Brød med ost",
     "Ingredienser": [
       "brød",
       "ost"
-    ],
-    "Nummer": 3
+    ]
   },
   {
     "Navn": "Palak paneer",
@@ -31,27 +20,30 @@
       "tomat",
       "krydderier",
       "ris"
-    ],
-    "Nummer": 4
+    ]
   },
   {
     "Navn": "Pizza",
     "Ingredienser": [
-      "Pizzadej",
+      "mel",
+      "ost",
       "tomat",
-      "ost"
-    ],
-    "Nummer": 5
+      "fyld",
+      "gær"
+    ]
   },
   {
-    "Navn": "Brasede kartofler",
+    "Navn": "Spejlæg",
     "Ingredienser": [
-      "kartofler",
-      "smør",
-      "salt",
-      "peber",
-      "løg"
-    ],
-    "Nummer": 6
+      "æg",
+      "rugbrød"
+    ]
+  },
+  {
+    "Navn": "Pitabrød med cheddar",
+    "Ingredienser": [
+      "pita",
+      "cheddar"
+    ]
   }
 ]
