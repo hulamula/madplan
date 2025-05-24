@@ -11,7 +11,7 @@ namespace madplanwpf.Services
         /// </summary>
         public static Dictionary<DayOfWeek, Ret> LavPlan(List<Ret> retter)
         {
-            //sikkerhedstjek for tom liste
+            //returner tom dictionary hvis listen med retter er tom
             if (retter.Count == 0)
             {
                 return new Dictionary<DayOfWeek, Ret>();
@@ -24,7 +24,7 @@ namespace madplanwpf.Services
             //konstruer en tom dictionary med ugedag som nøgle og Ret som værdi
             Dictionary<DayOfWeek, Ret> ugePlan = new Dictionary<DayOfWeek, Ret>();
 
-            //giv hver nøgle en værdi
+            //index integer til brug i foreach loop
             int index = 0;
 
             //udfyld dictionary med vilkårlige retter

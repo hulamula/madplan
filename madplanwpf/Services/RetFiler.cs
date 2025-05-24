@@ -28,6 +28,7 @@ namespace madplanwpf.Services
         public const string BrugerRetter = "Retter.json";
         public const string StandardRetter = "DefaultRetter.json";
 
+        //metode til at ensrette store og små begyndelsesbogstaver
         public static void CaseFixer(List<Ret> retter)
         {
             foreach (Ret ret in retter)
@@ -69,7 +70,7 @@ namespace madplanwpf.Services
         }
 
 
-        //public metode til at gemme en ret, kan måske gøres privat senere
+        //metode til at gemme en ny ret
         public static void GemNyRet(Ret ret)
         {
             if (ret == null)

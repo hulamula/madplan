@@ -6,11 +6,11 @@ using madplanwpf.Models;
 namespace madplanwpf.Services
 {
     /// <summary>
-    /// tilføj ingredienser fra ret til vareliste og exporter til .txt
+    /// tilføj ingredienser fra ret til indkøbsliste og exporter til .txt
     /// </summary>
     public class Indkøbsliste
     {
-        //declare en liste Varer med property
+        //property: liste med varer
         public List<string> Varer { get; set; }
 
         //konstruktør af vareliste der sikrer at Varer ikke er tom/null
